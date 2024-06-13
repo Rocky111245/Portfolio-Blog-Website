@@ -1,0 +1,67 @@
+
+.navbar_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar {
+    background-color: #1a1a1a;
+    margin-right: 5em;
+    width: 60%;
+    border-radius: 0.5rem;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.logoText {
+    color: #00d8ff;
+    margin-right: 2em;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+.logoText:hover{
+    background-color: #e6e6e6;
+    color: #1a1a1a;
+}
+
+.navList {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    list-style: none;
+    display: flex;
+    gap: 1em;
+}
+
+.navLink {
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: bold;
+}
+
+.navLink:hover {
+    background-color: #e6e6e6;
+    color: #1a1a1a;
+}
+
+.contactButton {
+    font-weight: bold;
+    background: linear-gradient(to right, #00d8ff, #a3a3ff);
+    padding: 0.5rem 1rem;
+    border-radius: 0.25rem;
+}
+
+.contactButton .navLink {
+    color: #ffffff;
+}

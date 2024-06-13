@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from "./UI/Home/home";
+import Navbar from "./UI/Navbar/navbar"; // Assuming you have a Navbar component
+import style from "./App.module.css";
+import ParticlesComponent from "./UI/Particle Background/ParticleBackground";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Router>
+            <div >
+                <Navbar />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+
+                    {/* Add more routes as needed */}
+                </Routes>
+            </div>
+        </Router>
+    );
 }
 
 export default App;

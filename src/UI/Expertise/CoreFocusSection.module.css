@@ -1,0 +1,73 @@
+.coreFocusSection {
+    padding: 2em;
+    background-color: #121212;
+    color: white;
+    text-align: center;
+}
+
+.title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5em;
+    color: #00bcd4;
+    position: relative;
+}
+
+.title::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 4px;
+    background-color: #00bcd4;
+    margin: 0.5em auto 0;
+}
+
+.cardsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 2em;
+}
+
+.card {
+    background-color: #04344e;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 1.5em;
+    width: 20%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.cardImage {
+    width: 100%;
+    height: auto;
+    min-height: 250px;
+    margin-bottom: 1em;
+    border-radius: 10px;
+}
+
+.card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5em;
+    color: #00bcd4;
+    text-align: center;
+}
+
+.card p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+    }
+}

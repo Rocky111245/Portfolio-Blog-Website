@@ -1,0 +1,88 @@
+.slider {
+    overflow: hidden;
+    position: relative;
+    background-color: #2c2c2c !important;
+    max-width: 100%;
+    min-height: 30vh; /* Increased height to accommodate larger images and text */
+    padding: 20px 0;
+}
+
+.sliderWrapper {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+    min-width: 12.5%; /* 8 images per view */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 30vh;
+    max-width: 150px;
+    text-align: center;
+    margin: 10px; /* Added margin for spacing between slides */
+}
+
+.carouselTitle {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2rem; /* Slightly larger font size for title */
+    color: #ffffff;
+    padding: 0.5em;
+}
+
+.carouselText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselImage {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5em;
+    object-fit: contain;
+}
+
+.leftArrow, .rightArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 3rem; /* Increased size of the arrows */
+}
+
+.leftArrow {
+    left: 10px;
+}
+
+.rightArrow {
+    right: 10px;
+}
+
+.carouselLearnMoreButton {
+    font-family: 'Verdana', sans-serif;
+    margin-top: 0.5em;
+    padding: 10px 20px;
+    background-color: #ff9800; /* Changed button background color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    font-size: 1rem; /* Increased font size for button */
+}
+
+.carouselLearnMoreButton:hover {
+    background-color: #ff5722; /* Changed button hover background color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
