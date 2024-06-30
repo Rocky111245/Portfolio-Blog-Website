@@ -1,0 +1,38 @@
+.ratingContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0; /* Customizable margin */
+    padding: 5px 10px; /* Customizable padding */
+    border-radius: 5px;
+    background-color: #020820; /* Background color for better visibility */
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out; /* Smooth transitions */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.ratingContainer:hover {
+    transform: scale(1.05); /* Slight zoom effect on hover */
+    background-color: #f0f0f0; /* Slightly different background color on hover */
+}
+
+.starText{
+    font-size: 0.5rem;
+}
+
+.starFilled {
+    color: gold;
+    font-size: 1.5em;
+    transition: color 0.2s ease-in-out; /* Transition for color change */
+}
+
+.starEmpty {
+    color: grey;
+    font-size: 1.5em;
+    transition: color 0.2s ease-in-out; /* Transition for color change */
+}
+
+.starFilled:hover,
+.starEmpty:hover {
+    color: #ffa500; /* Change color to orange on hover */
+}

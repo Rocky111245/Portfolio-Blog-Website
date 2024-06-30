@@ -1,0 +1,28 @@
+.portfolioList {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #011722;
+    margin: 1em 4em 2em 0em;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.portfolioList.active {
+    background-color: #ffffff;
+    color: #011722;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .portfolioList {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolioList {
+        font-size: 16px;
+    }
+}

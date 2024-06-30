@@ -1,20 +1,24 @@
 import React from 'react';
-import style from './home.module.css';
+import home_style from './home.module.css';
 import SkillsSection from "../Skill Section/SkillsSection";
 import CoreFocusSection from "../Expertise/CoreFocusSection";
+import Portfolio from "../Portfolio Showcase/Portfolio";
+import Works from '../Works/Works';
+
+
 
 const Home = () => {
     return (
         <>
-        <div className={style.home}>
-            <div className={style.content}>
+        <div className={home_style.home}>
+            <div className={home_style.content}>
                 <img
                     src="https://ik.imagekit.io/emtbd/BLOG/Rocky?updatedAt=1718260687516"
                     alt="Profile"
-                    className={style.roundedImage}
+                    className={home_style.roundedImage}
                     loading="lazy"
                 />
-                <div className={style.text}>
+                <div className={home_style.text}>
                     <h1>Ahmed Rakib Al Hasan</h1>
                     <p>
                         As a Renewable Energy Engineer turned Software Developer, I have a passion for solving complex problems. My self-learning journey in programming has led me to develop a <strong>neural network framework from scratch, FLUX, similar to PyTorch and TensorFlow</strong>, and work on various <strong>algorithms</strong> and <strong>embedded systems</strong>.
@@ -28,15 +32,19 @@ const Home = () => {
                     <p>
                         I learn primarily through reverse engineering and embrace new challenges eagerly. I am a versatile individual, always striving to expand my skill set.
                     </p>
-                    <div className={style.buttons}>
-                        <button className={style.button} onClick={() => window.location.href = '#skills'}>See My Skills</button>
-                        <button className={style.button} onClick={() => window.location.href = '#projects'}>Head to Capstone Projects</button>
+                    <div className={home_style.buttons}>
+                        <button className={home_style.button} onClick={() => window.location.href = '#skills'}>See My Skills</button>
+                        <button className={home_style.button} onClick={() => window.location.href = '#projects'}>Head to Capstone Projects</button>
                     </div>
                 </div>
             </div>
         </div>
             <SkillsSection/>
+            <Portfolio/>
+            <Works/>
             <CoreFocusSection/>
+
+
 
         </>
     );

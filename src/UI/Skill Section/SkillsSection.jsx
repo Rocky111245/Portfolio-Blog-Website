@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import styles from './SkillsSection.module.css';
+import skills_section_styles from './SkillsSection.module.css';
 
 const skills = [
     { name: 'C', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
@@ -25,10 +25,10 @@ const skills = [
 const SkillsSection = () => {
     useEffect(() => {
         const handleScroll = () => {
-            const element = document.querySelector(`.${styles.skillsSection}`);
+            const element = document.querySelector(`.${skills_section_styles.skillsSection}`);
             const rect = element.getBoundingClientRect();
             if (rect.top < window.innerHeight) {
-                element.classList.add(styles.fadeIn);
+                element.classList.add(skills_section_styles.fadeIn);
             }
         };
 
@@ -37,13 +37,13 @@ const SkillsSection = () => {
     }, []);
 
     return (
-        <div className={styles.skillsSection}>
-            <h2 className={styles.title}>Technologies I Work With</h2>
-            <div className={styles.skillsGrid}>
+        <div className={skills_section_styles.skillsSection}>
+            <h2 className={skills_section_styles.title}>Technologies I Work With</h2>
+            <div className={skills_section_styles.skillsGrid}>
                 {skills.map((skill, index) => (
-                    <div key={index} className={styles.skillCard}>
-                        <img src={skill.logo} alt={skill.name} className={styles.skillLogo} />
-                        <p className={styles.skillName}>{skill.name}</p>
+                    <div key={index} className={skills_section_styles.skillCard}>
+                        <img src={skill.logo} alt={skill.name} className={skills_section_styles.skillLogo} />
+                        <p className={skills_section_styles.skillName}>{skill.name}</p>
                     </div>
                 ))}
             </div>
