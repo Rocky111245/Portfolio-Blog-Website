@@ -1,0 +1,50 @@
+.expertiseShowcase {
+    background: linear-gradient(135deg, #020820 0%, #041033 100%);
+    padding: 4rem 2rem;
+    color: #ffffff;
+    overflow: hidden;
+  }
+  
+  .expertiseShowcase h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    color: #7cb9e8;
+  }
+  
+  .expertiseGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+  }
+  
+  .expertiseItem {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    padding: 1.5rem;
+  }
+  
+  .expertiseItem h3 {
+    font-size: 1.2rem;
+    color: #7cb9e8;
+    margin-bottom: 0.5rem;
+  }
+  
+  .expertiseItem p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+  
+  @media (max-width: 768px) {
+    .expertiseShowcase {
+      padding: 3rem 1rem;
+    }
+  
+    .expertiseShowcase h2 {
+      font-size: 2rem;
+    }
+  
+    .expertiseGrid {
+      grid-template-columns: 1fr;
+    }
+  }

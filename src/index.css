@@ -56,12 +56,11 @@ body {
   line-height: 1.5;
   background: radial-gradient(
   ellipse at center,
-  #020820 0%,
-  #030925 20%,
-  #040a2a 40%,
-  #091347 60%,
-  #17175a 80%,
-  #232963 100%
+  #000719 0%,
+  #020a23 25%,
+  #040e2d 50%,
+  #061337 75%,
+  #081741 100%
 );
   color: #ffffff;
 }

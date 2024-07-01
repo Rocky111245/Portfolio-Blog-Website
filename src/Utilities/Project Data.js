@@ -42,35 +42,43 @@ export const UnityGame2d=[
 export const Capstone_Tier=[
 
     
+
     {id:1,
-        title: "Decision Support System with Dashboard",
+        title: "FLUX- A Custom-Made Neural Network Framework (e.g PyTorch, Tensorflow) Featuring Custom Gradient Engine",
+        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/fnn.webp?updatedAt=1719739784177"
+        ,
+        difficulty: 3
+    },
+    {id:2,
+        title: "Decision Support System with Dashboard made using React and Chart.js",
         img: "https://ik.imagekit.io/emtbd/Project%20screenshots%20and%20Videos/Full%20Stack%20Web%20App/1.png?updatedAt=1689953157990"
         ,
         difficulty: 4
     },
  
-    {id:2,
-        title: "FLUX- A Custom-Made Neural Network Framework",
-        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/fnn.webp?updatedAt=1719739784177"
-        ,
-        difficulty: 3
-    },
+    
     {id:3,
-        title: "A Classic Implementation of the Timsort Hybrid Sorting Algorithm",
-        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/image-30.webp?updatedAt=1719739873500"
+        title: "A Classic Implementation of the Timsort Hybrid Sorting Algorithm built in C++",
+        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/insertion-sort-algorithm-line-icon-illustration-vector.jpg?updatedAt=1719760500966"
         ,
         difficulty: 3
     },
     {id:4,
-        title: "CastleHeart- A 2D Game using Unity Game Engine",
+        title: "CastleHeart- A 2D Game using Unity Game Engine and C#",
         img: "https://ik.imagekit.io/emtbd/Project%20screenshots%20and%20Videos/2D%20Unity%20Game/4.png?updatedAt=1689953190852"
         ,
         difficulty: 3
     },
     
     {id:5,
-        title: "Advanced Obstacle Avoiding Robot Developed using Arduino Microcontroller",
+        title: "Advanced Obstacle Avoiding Robot Developed using Arduino Microcontroller and Custom Algorithm",
         img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/DALLE2~2.WEB?updatedAt=1719738090065"
+        ,
+        difficulty: 3
+    },
+    {id:6,
+        title: "A Custom Matrix Library built using C++ utilizing smart pointers. Specifically designed for Neural Networks.",
+        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/image.png_img_upload_solution_2022-05-16%2007_39_12.692593.png?updatedAt=1719833284715"
         ,
         difficulty: 3
     }

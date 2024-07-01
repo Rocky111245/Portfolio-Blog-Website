@@ -1,81 +1,82 @@
 .skillsSection {
-    padding: 1em;
+    min-height: 80vh;
+    padding: 1rem;
     color: white;
     text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 1.5s ease-in-out, transform 1.5s ease-in-out;
-}
-
-.skillsSection.fadeIn {
-    opacity: 1;
-    transform: translateY(0);
 }
 
 .title {
-    font-family:Roboto,sans-serif;
-    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: clamp(2rem, 2vw, 3rem);
+    font-weight: bold;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: whitesmoke;
 }
 
 .skillsGrid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    align-items: center;
-    margin: 1em;
+    align-items: flex-start;
+    width: 100%;
 }
 
 .skillCard {
     display: flex;
-    margin: 2em;
     flex-direction: column;
     align-items: center;
+    margin: 1rem;
     transition: transform 0.3s ease-in-out;
-
+    min-width: 100px;
 }
 
 .skillCard:hover {
-    transform: translateY(-10px);
+    transform: translateY(-0.5rem);
 }
 
 .skillLogo {
-    width: 100%;
+    width: 3em;
     height: auto;
+    font-size: 2rem;
+    margin: 0.5em;
 }
 
 .skillName {
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 1.5vw, 2rem);
     font-weight: 500;
-    margin-top: 0.5em;
+    margin-top: 0.5rem;
+    color: #e0e0e0;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+@media (max-width: 1100px) {
+    .skillCard {
+        width: calc(25% - 2rem);
     }
 }
 
 @media (max-width: 768px) {
-    .skillCard {
-        width: 60px;
+    .skillsSection {
+        padding: 2rem 0.5rem;
     }
 
-    .skillName {
-        font-size: 0.8rem;
+    .skillCard {
+        width: calc(33.33% - 2rem);
+        margin: 0.5rem;
+    }
+
+    .skillLogo {
+        max-width: 80px;
     }
 }
 
-@media (min-width: 1000px) and (max-width: 2560px) {
+@media (max-width: 480px) {
     .skillCard {
-        width: 100px;
+        width: calc(50% - 1rem);
     }
 
-    .skillName {
-        font-size: 1.2rem;
+    .skillLogo {
+        max-width: 60px;
     }
 }

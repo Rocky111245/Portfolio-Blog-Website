@@ -5,6 +5,9 @@ import CoreFocusSection from "../Expertise/CoreFocusSection";
 import Portfolio from "../Portfolio Showcase/Portfolio";
 import Works from '../Works/Works';
 
+import SkillsAndInterests from '../ExpertiseShowcase/ExpertiseShowcase';
+import ContactPage from '../Contact Us/ContactUs';
+
 
 
 const Home = () => {
@@ -48,6 +51,8 @@ const Home = () => {
             <SkillsSection/>
             <Portfolio/>
             <Works/>
+            <SkillsAndInterests/>
+            <ContactPage/>
             <CoreFocusSection/>
 
 

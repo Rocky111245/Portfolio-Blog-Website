@@ -1,5 +1,6 @@
-import React, { useEffect } from 'react';
-import skills_section_styles from './SkillsSection.module.css';
+import React from 'react';
+import { motion } from 'framer-motion';
+import styles from './SkillsSection.module.css';
 
 const skills = [
     { name: 'C', logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg' },
@@ -23,31 +24,49 @@ const skills = [
 ];
 
 const SkillsSection = () => {
-    useEffect(() => {
-        const handleScroll = () => {
-            const element = document.querySelector(`.${skills_section_styles.skillsSection}`);
-            const rect = element.getBoundingClientRect();
-            if (rect.top < window.innerHeight) {
-                element.classList.add(skills_section_styles.fadeIn);
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        visible: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 0.1,
+                delayChildren: 0.3
             }
-        };
+        }
+    };
 
-        window.addEventListener('scroll', handleScroll);
-        return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    const itemVariants = {
+        hidden: { y: 20, opacity: 0 },
+        visible: {
+            y: 0,
+            opacity: 1,
+            transition: {
+                type: 'spring',
+                stiffness: 100
+            }
+        }
+    };
 
     return (
-        <div className={skills_section_styles.skillsSection}>
-            <h2 className={skills_section_styles.title}>Technologies I Work With</h2>
-            <div className={skills_section_styles.skillsGrid}>
+        <motion.div
+            className={styles.skillsSection}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.2 }}
+            variants={containerVariants}
+        >
+            <motion.h2 className={styles.title} variants={itemVariants}>
+                Technologies I Work With
+            </motion.h2>
+            <motion.div className={styles.skillsGrid} variants={containerVariants}>
                 {skills.map((skill, index) => (
-                    <div key={index} className={skills_section_styles.skillCard}>
-                        <img src={skill.logo} alt={skill.name} className={skills_section_styles.skillLogo} />
-                        <p className={skills_section_styles.skillName}>{skill.name}</p>
-                    </div>
+                    <motion.div key={index} className={styles.skillCard} variants={itemVariants}>
+                        <img src={skill.logo} alt={skill.name} className={styles.skillLogo} />
+                        <p className={styles.skillName}>{skill.name}</p>
+                    </motion.div>
                 ))}
-            </div>
-        </div>
+            </motion.div>
+        </motion.div>
     );
 }
 
