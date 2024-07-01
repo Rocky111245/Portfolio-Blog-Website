@@ -139,19 +139,31 @@ export default function Works() {
                 </div>
               </div>
               <div className={styles.right}>
-                {d.isVideo ? (
-                  d.iframeSrc ? (
-                    <iframe src={d.iframeSrc} allow="autoplay"></iframe>
-                  ) : (
-                    <video ref={videoRef} className={styles.rightimages} muted controls>
-                      <source src={d.img} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                  )
-                ) : (
-                  <img className={styles.rightimages} src={d.img} alt="" />
-                )}
-              </div>
+                    {d.isVideo ? (
+                      d.iframeSrc ? (
+                        <iframe 
+                          src={d.iframeSrc} 
+                          allow="autoplay"
+                          className={styles.rightimages}
+                          frameBorder="0"
+                          allowFullScreen
+                        ></iframe>
+                      ) : (
+                        <video 
+                          ref={videoRef} 
+                          className={styles.rightimages} 
+                          muted 
+                          controls
+                          playsInline
+                        >
+                          <source src={d.img} type="video/mp4" />
+                          Your browser does not support the video tag.
+                        </video>
+                      )
+                    ) : (
+                      <img className={styles.rightimages} src={d.img} alt="" />
+                    )}
+                  </div>
             </div>
           </div>
         ))}

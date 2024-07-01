@@ -12,12 +12,18 @@ const Home = () => {
         <>
         <div className={home_style.home}>
             <div className={home_style.content}>
-                <img
-                    src="https://ik.imagekit.io/emtbd/BLOG/Rocky?updatedAt=1718260687516"
-                    alt="Profile"
-                    className={home_style.roundedImage}
-                    loading="lazy"
-                />
+            <img
+  src="https://ik.imagekit.io/emtbd/BLOG/Rocky?updatedAt=1718260687516"
+  srcSet="
+    https://ik.imagekit.io/emtbd/BLOG/Rocky?updatedAt=1718260687516&tr=w-400 400w,
+    https://ik.imagekit.io/emtbd/BLOG/Rocky?updatedAt=1718260687516&tr=w-800 800w,
+    https://ik.imagekit.io/emtbd/BLOG/Rocky?updatedAt=1718260687516&tr=w-1200 1200w
+  "
+  sizes="(max-width: 400px) 100vw, 400px"
+  alt="Profile"
+  className={home_style.roundedImage}
+  loading="lazy"
+/>
                 <div className={home_style.text}>
                     <h1>Ahmed Rakib Al Hasan</h1>
                     <p>
