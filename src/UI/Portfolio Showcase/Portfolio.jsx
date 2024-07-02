@@ -1,32 +1,34 @@
-import { useEffect, useState } from "react";
-import PortfolioList from "./PortfolioList";
-import portfolioStyles from "./Portfolio.module.css";
-import {
-    FullStackWebApp,
-    AndroidVotingSystem,
-    Ecommerce,
-    UnityGame2d,
-    Chatbot,
-    Capstone_Tier
-} from "../../Utilities/Project Data";
+import React, { useEffect, useState } from 'react';
+import PortfolioList from './PortfolioList';
+import styles from './Portfolio.module.css';
+import { FullStackWebApp, AndroidVotingSystem, Ecommerce, UnityGame2d, Chatbots, Capstone_Tier, MachineLearning, EmbeddedSystems, Algorithms } from "../../Utilities/Project Data";
 
 export default function Portfolio() {
-    const [selected, setSelected] = useState("featured");
+    const [selected, setSelected] = useState("Capstone Tier");
     const [data, setData] = useState([]);
 
     const list = [
-        { id: "featured", title: "Capstone Tier" },
-        { id: "web", title: "Web App" },
-        { id: "mobile", title: "Mobile App" },
-        { id: "chatbot", title: "Chat Bot" },
-        { id: "E-commerce", title: "E-commerce" },
-        { id: "Unity GameEngine 2D", title: "Unity 2D Game" }
+        { id: "Capstone Tier", title: "Capstone Tier Projects" },
+        { id: "ML", title: "Machine Learning and Mathematics" },
+        { id: "Algorithms and Data Structures", title: "Algorithms and Data Structures" },
+        { id: "Embedded Systems and Circuit Design", title: "Embedded Systems and Circuit Design" },
+        { id: "web", title: "Web Apps" },
+        { id: "mobile", title: "Android App" },
+        { id: "chatbot", title: "Chat Bot App" },
+        { id: "E-commerce", title: "E-commerce App" },
+        { id: "Unity GameEngine 2D", title: "Unity Game Engine" },
     ];
 
     useEffect(() => {
         switch (selected) {
-            case "featured":
+            case "Capstone Tier":
                 setData(Capstone_Tier);
+                break;
+            case "ML":
+                setData(MachineLearning);
+                break;
+            case "Embedded Systems and Circuit Design":
+                setData(EmbeddedSystems);
                 break;
             case "web":
                 setData(FullStackWebApp);
@@ -35,7 +37,7 @@ export default function Portfolio() {
                 setData(AndroidVotingSystem);
                 break;
             case "chatbot":
-                setData(Chatbot);
+                setData(Chatbots);
                 break;
             case "E-commerce":
                 setData(Ecommerce);
@@ -43,15 +45,18 @@ export default function Portfolio() {
             case "Unity GameEngine 2D":
                 setData(UnityGame2d);
                 break;
+            case "Algorithms and Data Structures":
+                setData(Algorithms);
+                break;
             default:
                 setData([]);
         }
     }, [selected]);
 
     return (
-        <div className={portfolioStyles.portfolio} id="portfolio">
-            <h1 className={portfolioStyles.title}>My Projects</h1>
-            <ul className={portfolioStyles.projectList}>
+        <div className={styles.portfolio} id="portfolio">
+            <h1 className={styles.title}>My Projects</h1>
+            <ul className={styles.portfolioList}>
                 {list.map(item => (
                     <PortfolioList
                         key={item.id}
@@ -62,11 +67,14 @@ export default function Portfolio() {
                     />
                 ))}
             </ul>
-            <div className={portfolioStyles.container}>
+            <div className={styles.container}>
                 {data.map(d => (
-                    <div key={d.id} className={portfolioStyles.item}>
+                    <div key={d.id} className={styles.item}>
                         <img src={d.img} alt={d.title} />
-                        <h3>{d.title}</h3>
+                        <div className={styles.overlay}>
+                            <h3>{d.title}</h3>
+                            <p>{d.description}</p>
+                        </div>
                     </div>
                 ))}
             </div>
