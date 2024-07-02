@@ -74,6 +74,10 @@ export default function Portfolio() {
                         <div className={styles.overlay}>
                             <h3>{d.title}</h3>
                             <p>{d.description}</p>
+                            <a href={d.github_link} className={styles.githubLink} target="_blank" rel="noopener noreferrer">
+                                <h6>Go to Project</h6>
+                                <img src="https://ik.imagekit.io/emtbd/BLOG/github-mark-white.png?updatedAt=1718272026499" alt="GitHub link" />
+                            </a>
                         </div>
                     </div>
                 ))}

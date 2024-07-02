@@ -68,6 +68,35 @@
     opacity: 1;
 }
 
+/* Add this to your CSS */
+.overlay .githubLink {
+    display: none;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    color: #e6f1ff;
+    transition: transform 0.3s ease;
+    text-decoration: none; /* Remove underline from the link */
+}
+
+.item:hover .githubLink {
+    display: flex;
+    align-items: center;
+    transform: scale(1.1);
+}
+
+.overlay .githubLink h6 {
+    margin: 0;
+    font-size: 1rem; /* Adjust the size as needed */
+    color: #e6f1ff;
+    margin-right: 0.5rem;
+}
+
+.overlay .githubLink img {
+    width: 20px; /* Adjust the size as needed */
+    height: 20px; /* Adjust the size as needed */
+}
+
+
 .item:hover img {
     transform: scale(1.1);
 }
