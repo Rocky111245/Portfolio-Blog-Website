@@ -1,0 +1,119 @@
+.footer {
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    color: #ffffff;
+    padding: 3rem 0 1rem;
+    font-family: 'Arial', sans-serif;
+}
+
+.footerContent {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.footerSection {
+    flex: 1;
+    margin-bottom: 2rem;
+    min-width: 250px;
+}
+
+.footerSection h3 {
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.footerSection h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;  /* Full width of the text */
+    height: 2px;  /* Increased height for more prominence */
+    background-color: #64ffda;
+    transition: width 0.3s ease;  /* Smooth transition for potential hover effects */
+}
+
+.footerSection h4 {
+    font-size: clamp(1.2rem, 1.5vw, 1.5rem);
+    margin-bottom: 1rem;
+    color: #64ffda;
+}
+
+.footerSection ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footerSection ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footerSection a, .footerSection ScrollLink {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.footerSection a:hover, .footerSection ScrollLink:hover {
+    color: #64ffda;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.socialIcons a {
+    font-size: 1.5rem;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: #64ffda;
+}
+
+.footerBottom {
+    text-align: center;
+    padding-top: 2rem;
+    margin-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    .footerContent {
+        flex-direction: column;
+    }
+
+    .footerSection {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .footer {
+        padding: 2rem 0 1rem;
+    }
+
+    .footerContent {
+        padding: 0 1rem;
+    }
+
+    .footerSection h3 {
+        font-size: 1.3rem;
+    }
+
+    .footerSection h4 {
+        font-size: 1.1rem;
+    }
+
+    .footerSection ul li, .footerSection p {
+        font-size: 0.9rem;
+    }
+}

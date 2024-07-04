@@ -49,13 +49,14 @@ const SkillsSection = () => {
 
     return (
         <motion.div
-            className={styles.skillsSection}
+            className={styles.skillsSection }
+            id='skills'
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={containerVariants}
         >
-            <motion.h2 className={styles.title} variants={itemVariants}>
+            <motion.h2 className={styles.title} variants={itemVariants} >
                 Technologies I Work With
             </motion.h2>
             <motion.div className={styles.skillsGrid} variants={containerVariants}>

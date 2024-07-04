@@ -1,12 +1,13 @@
 .header {
-    width:100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     position: sticky;
     top: 0;
     z-index: 1000;
     background-color: rgba(26, 26, 26, 0.95);
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding: 0.5rem 0;
 }
 
 .header.scrolled {
@@ -15,9 +16,9 @@
 }
 
 .navContainer {
-    width: 80%;
+    width: 95%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -48,7 +49,7 @@
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
     padding: 0.5rem 0;
     position: relative;
     transition: color 0.3s ease;
@@ -73,13 +74,36 @@
     width: 100%;
 }
 
+.rightSection {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 1rem;
+}
+
+.socialIcons a {
+    font-size: 1.4rem;
+    color: #ffffff;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.socialIcons a:hover {
+    color: #64ffda;
+    transform: translateY(-2px);
+}
+
 .contactButton {
     background: linear-gradient(to right, #00d8ff, #00a8e8);
     color: #ffffff;
     text-decoration: none;
-    padding: 0.75rem 1.5rem;
+    padding: 0.5rem 1.2rem;
     border-radius: 50px;
     font-weight: bold;
+    font-size: 0.9rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -91,7 +115,7 @@
 @media (max-width: 768px) {
     .navContainer {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
 
     .navbar {
@@ -104,8 +128,13 @@
         gap: 1rem;
     }
 
+    .rightSection {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
     .contactButton {
-        align-self: center;
-        margin-top: 1rem;
+        margin-top: 0.5rem;
     }
 }

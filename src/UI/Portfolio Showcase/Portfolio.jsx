@@ -3,9 +3,10 @@ import PortfolioList from './PortfolioList';
 import styles from './Portfolio.module.css';
 import { FullStackWebApp, AndroidVotingSystem, Ecommerce, UnityGame2d, Chatbots, Capstone_Tier, MachineLearning, EmbeddedSystems, Algorithms } from "../../Utilities/Project Data";
 
-export default function Portfolio() {
+export default function Portfolio({ setSelectedProject }) {
     const [selected, setSelected] = useState("Capstone Tier");
     const [data, setData] = useState([]);
+
 
     const list = [
         { id: "Capstone Tier", title: "Capstone Tier Projects" },
@@ -53,18 +54,29 @@ export default function Portfolio() {
         }
     }, [selected]);
 
+    const handleProjectClick = (projectId) => {
+        setSelectedProject(projectId);
+        setTimeout(() => {
+            const worksSection = document.getElementById('works');
+            if (worksSection) {
+                worksSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        }, 100);
+    };
+
     return (
         <div className={styles.portfolio} id="portfolio">
             <h1 className={styles.title}>My Projects</h1>
             <ul className={styles.portfolioList}>
                 {list.map(item => (
                     <PortfolioList
-                        key={item.id}
-                        title={item.title}
-                        active={selected === item.id}
-                        setSelected={setSelected}
-                        id={item.id}
-                    />
+                    key={item.id}
+                    title={item.title}
+                    active={selected === item.id}
+                    setSelected={setSelected}
+                    id={item.id}
+                    setSelectedProject={setSelectedProject}  // Add this line
+                />
                 ))}
             </ul>
             <div className={styles.container}>
@@ -74,10 +86,15 @@ export default function Portfolio() {
                         <div className={styles.overlay}>
                             <h3>{d.title}</h3>
                             <p>{d.description}</p>
-                            <a href={d.github_link} className={styles.githubLink} target="_blank" rel="noopener noreferrer">
-                                <h6>Go to Project</h6>
-                                <img src="https://ik.imagekit.io/emtbd/BLOG/github-mark-white.png?updatedAt=1718272026499" alt="GitHub link" />
-                            </a>
+                            <div className={styles.buttonContainer}>
+                                <a href={d.github_link} className={styles.githubLink} target="_blank" rel="noopener noreferrer">
+                                    <h6>Go to Project</h6>
+                                    <img src="https://ik.imagekit.io/emtbd/BLOG/github-mark-white.png?updatedAt=1718272026499" alt="GitHub link" />
+                                </a>
+                                <button className={styles.viewDetailsButton} onClick={() => handleProjectClick(d.id)}>
+                            View Details
+                        </button>
+                            </div>
                         </div>
                     </div>
                 ))}
