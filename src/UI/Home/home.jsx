@@ -1,3 +1,4 @@
+// Home.js (Modified)
 import React, { useState } from 'react';
 import home_style from './home.module.css';
 import SkillsSection from "../Skill Section/SkillsSection";
@@ -41,8 +42,8 @@ const Home = () => {
                             I learn primarily through reverse engineering and embrace new challenges eagerly. I am a versatile individual, always striving to expand my skill set.
                         </p>
                         <div className={home_style.buttons}>
-                            <button className={home_style.button} onClick={() => window.location.href = '#skills'}>See My Skills</button>
-                            <button className={home_style.button} onClick={() => window.location.href = '#projects'}>Head to Capstone Projects</button>
+                        <button className={home_style.button} onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>See My Skills</button>
+                        <button className={home_style.button} onClick={() => document.getElementById('portfolio').scrollIntoView({ behavior: 'smooth' })}>Head to Capstone Projects</button>
                         </div>
                     </div>
                 </div>

@@ -111,30 +111,72 @@
     transform: translateY(-2px);
     box-shadow: 0 4px 10px rgba(0, 216, 255, 0.3);
 }
+.hamburger {
+    display: none;
+    font-size: 1.5rem;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1001;
+}
 
 @media (max-width: 768px) {
     .navContainer {
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+    }
+
+    .hamburger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
     }
 
     .navbar {
-        margin: 1rem 0;
+        display: none;
+        width: 100%;
+    }
+
+    .navbar.open {
+        display: block;
     }
 
     .navList {
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        padding: 1rem 0;
     }
 
     .rightSection {
+        display: none;
+        width: 100%;
         flex-direction: column;
         align-items: center;
         gap: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .rightSection.open {
+        display: flex;
     }
 
     .contactButton {
         margin-top: 0.5rem;
+    }
+
+    .navbar.open, .rightSection.open {
+        animation: slideDown 0.3s ease-out;
+    }
+
+    @keyframes slideDown {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 }
