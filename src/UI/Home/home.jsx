@@ -30,16 +30,16 @@ const Home = () => {
                     <div className={home_style.text}>
                         <h1>Ahmed Rakib Al Hasan</h1>
                         <p>
-                            As a Renewable Energy Engineer turned Software Developer, I have a passion for solving complex problems. My self-learning journey in programming has led me to develop a <strong>neural network framework from scratch, FLUX, similar to PyTorch and TensorFlow</strong>, and work on various <strong>algorithms</strong> and <strong>embedded systems</strong>.
+                            I am a self-taught Software Engineer with a background in Renewable Energy Engineering, driven by a passion for solving complex problems. My self-learning journey led me to create <strong>FLUX</strong>, a custom-built neural network framework designed as an educational tool, and pioneer projects like implementing one of the most complex sorting algorithms like <strong>Timsort</strong> in C++, as well as engineering embedded systems, including an automatic solar tracker and an autonomous obstacle-avoiding robot using Arduino.
                         </p>
                         <p>
-                            With a strong foundation in algorithms, I thrive on challenges. My expertise spans C, C++, HTML, CSS, JavaScript, React, and Node.js, proven through successful projects for diverse clients.
+                            With a strong foundation in algorithms and an understanding of underlying data structures, I thrive on challenges. My expertise spans C, C++, HTML, CSS, JavaScript, React, and Node.js, proven through successfully published projects.
                         </p>
                         <p>
                             Currently, I am pursuing an MBA to blend technical skills with business knowledge, aiming to create sustainable and efficient solutions.
                         </p>
                         <p>
-                            I learn primarily through reverse engineering and embrace new challenges eagerly. I am a versatile individual, always striving to expand my skill set.
+                            I learn primarily through reverse engineering and eagerly embrace new challenges. I am a versatile individual, always striving to expand my skill set.
                         </p>
                         <div className={home_style.buttons}>
                         <button className={home_style.button} onClick={() => document.getElementById('skills').scrollIntoView({ behavior: 'smooth' })}>See My Skills</button>

@@ -27,7 +27,7 @@ export const MachineLearning = [
     {
         id: "ml_3",
         title: "Linear Regression and Quadratic Function Approximation with Machine Learning with C",
-        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/1.png?updatedAt=1719889546750",
+        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/Screenshot%202024-08-30%20181353.png?updatedAt=1725012874678",
         github_link: "https://github.com/Rocky111245/Machine-Learning-Tests",
         difficulty: 3
     }
@@ -75,7 +75,7 @@ export const EmbeddedSystems = [
     {
         id: "embedded_3",
         title: "Circuit Development in EasyEDA for ESP32 Microcontroller",
-        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/1.png?updatedAt=1719891793400",
+        img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/1.png?updatedAt=1719926152379",
         difficulty: 1
     }
 ];
