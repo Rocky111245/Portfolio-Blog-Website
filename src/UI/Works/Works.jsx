@@ -106,7 +106,7 @@ export default function Works({ selectedProject }) {
       icon: "https://ik.imagekit.io/emtbd/rakib%20portfolio/symbol-data-matrix.svg?updatedAt=1724937177675",
       title: "Advanced Mathematics Matrices Library in Modern C++",
       githublink: "https://github.com/Rocky111245/Cpp-Matrix-Library-for-Neural-Networks",
-      desc: "I specifically crafted a Mathematics Matrices Library in modern C++ to enhance readability, speed, and robustness. This meticulously designed library is optimized for developing neural network frameworks, ensuring high performance and reliability. Key features include",
+      desc: "I specifically crafted a Mathematics Matrices Library in modern C++ to enhance readability, speed, and robustness. This meticulously designed library is optimized for developing neural network frameworks, ensuring high performance and reliability.",
       img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/image-8-png-2133%C3%97893-.png?updatedAt=1724750496098",
     },
     {
@@ -114,7 +114,7 @@ export default function Works({ selectedProject }) {
       icon: "https://ik.imagekit.io/emtbd/rakib%20portfolio/symbol-data-matrix.svg?updatedAt=1724937177675",
       title: "Advanced Mathematics Matrices Library in Modern C++",
       githublink: "https://github.com/Rocky111245/Cpp-Matrix-Library-for-Neural-Networks",
-      desc: "I specifically crafted a Mathematics Matrices Library in modern C++ to enhance readability, speed, and robustness. This meticulously designed library is optimized for developing neural network frameworks, ensuring high performance and reliability. Key features include",
+      desc: "I specifically crafted a Mathematics Matrices Library in modern C++ to enhance readability, speed, and robustness. This meticulously designed library is optimized for developing neural network frameworks, ensuring high performance and reliability.",
       img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/Screenshot%202024-07-02%20201058.png?updatedAt=1719922289087",
     },
     {
