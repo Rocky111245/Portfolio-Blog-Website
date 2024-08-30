@@ -14,14 +14,14 @@ export const MachineLearning = [
         id: "ml_1",
         title: "FLUX- A Custom-Made Neural Network Framework (e.g PyTorch, Tensorflow) Featuring Custom Gradient Engine",
         img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/fnn.webp?updatedAt=1719739784177",
-        github_link: "https://github.com/Rocky111245/Dense-Matrix-Driven-Discriminative-Neural-Network-Framework",
+        github_link: "https://github.com/Rocky111245/FLUX-A-Custom-Made-Deep-Learning-Framework",
         difficulty: 3
     },
     {
         id: "ml_2",
         title: "A Custom Matrix Library built using C++ utilizing smart pointers. Specifically Designed for Neural Networks.",
         img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/image.png_img_upload_solution_2022-05-16%2007_39_12.692593.png?updatedAt=1719833284715",
-        github_link: "https://github.com/Rocky111245/C-Matrix-Library-for-Neural-Networks",
+        github_link: "https://github.com/Rocky111245/Cpp-Matrix-Library-for-Neural-Networks",
         difficulty: 3
     },
     {
@@ -69,7 +69,7 @@ export const EmbeddedSystems = [
         id: "embedded_2",
         title: "Binary Keyboard Developed using Arduino Microcontroller and Custom Algorithm",
         img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/DALLE2~2.WEB?updatedAt=1719738090065",
-        github_link: "https://github.com/Rocky111245/C-Matrix-Library-for-Neural-Networks",
+        github_link: "https://github.com/Rocky111245/Binary-Keyboard",
         difficulty: 3
     },
     {
@@ -120,7 +120,7 @@ export const Chatbots = [
 export const UnityGame2d = [
     {
         id: "unity_1",
-        title: "CastlHeart 2D Game using Unity Game Engine",
+        title: "CastleHeart 2D Game using Unity Game Engine",
         img: "https://ik.imagekit.io/emtbd/Project%20screenshots%20and%20Videos/2D%20Unity%20Game/4.png?updatedAt=1689953190852",
         github_link: "https://github.com/Rocky111245/Unity-Game-Engine-2D-Game-CastleHeart",
         difficulty: 3
@@ -132,14 +132,14 @@ export const Capstone_Tier = [
         id: "capstone_1",
         title: "FLUX- A Custom-Made Neural Network Framework (e.g PyTorch, Tensorflow) Featuring Custom Gradient Engine",
         img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/fnn.webp?updatedAt=1719739784177",
-        github_link: "https://github.com/Rocky111245/Dense-Matrix-Driven-Discriminative-Neural-Network-Framework",
+        github_link: "https://github.com/Rocky111245/FLUX-A-Custom-Made-Deep-Learning-Framework",
         difficulty: 3
     },
     {
         id: "capstone_2",
         title: "A Custom Matrix Library built using C++ utilizing smart pointers. Specifically designed for Neural Networks.",
         img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/image.png_img_upload_solution_2022-05-16%2007_39_12.692593.png?updatedAt=1719833284715",
-        github_link: "https://github.com/Rocky111245/C-Matrix-Library-for-Neural-Networks",
+        github_link: "https://github.com/Rocky111245/Cpp-Matrix-Library-for-Neural-Networks",
         difficulty: 3
     },
     {

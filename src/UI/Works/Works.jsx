@@ -15,14 +15,14 @@ export default function Works({ selectedProject }) {
       desc: `This custom Deep Neural Network Framework, built from scratch in C and C++, emphasizes educational value by using core mathematical principles (Matrices and Gradients).This framework allows users to create, train, and deploy neural models while understanding the underlying mathematics.`,
       iframeSrc: "https://www.youtube.com/embed/2Sr-psavJNk?si=VPPUSPt9y4-vuvHR",
       isVideo: true,
-      githublink: "https://github.com/Rocky111245/Dense-Matrix-Driven-Discriminative-Neural-Network-Framework"
+      githublink: "https://github.com/Rocky111245/FLUX-A-Custom-Made-Deep-Learning-Framework"
     },
     {
       id: "flux_2",
       icon: "https://ik.imagekit.io/emtbd/rakib%20portfolio/8345929.png?updatedAt=1719760501130",
       title: "FLUX- A Custom-Made Neural Network Framework",
       desc: `This custom Deep Neural Network Framework, built from scratch in C and C++, emphasizes educational value by using core mathematical principles (Matrices and Gradients).This framework allows users to create, train, and deploy neural models while understanding the underlying mathematics.`,
-      githublink: "https://github.com/Rocky111245/Dense-Matrix-Driven-Discriminative-Neural-Network-Framework",
+      githublink: "https://github.com/Rocky111245/FLUX-A-Custom-Made-Deep-Learning-Framework",
       img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/8-png-1714%C3%97875-.png?updatedAt=1724743499399"
     },
     {
@@ -30,7 +30,7 @@ export default function Works({ selectedProject }) {
       icon: "https://ik.imagekit.io/emtbd/rakib%20portfolio/8345929.png?updatedAt=1719760501130",
       title: "FLUX- A Custom-Made Neural Network Framework",
       desc: `This custom Deep Neural Network Framework, built from scratch in C and C++, emphasizes educational value by using core mathematical principles (Matrices and Gradients).This framework allows users to create, train, and deploy neural models while understanding the underlying mathematics.`,
-      githublink: "https://github.com/Rocky111245/Dense-Matrix-Driven-Discriminative-Neural-Network-Framework",
+      githublink: "https://github.com/Rocky111245/FLUX-A-Custom-Made-Deep-Learning-Framework",
       img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/3-png-1693%C3%97807-.png?updatedAt=1724743498909"
     },
     {
@@ -105,7 +105,7 @@ export default function Works({ selectedProject }) {
       id: "matrices_1",
       icon: "https://ik.imagekit.io/emtbd/rakib%20portfolio/symbol-data-matrix.svg?updatedAt=1724937177675",
       title: "Advanced Mathematics Matrices Library in Modern C++",
-      githublink: "https://github.com/Rocky111245/C-Matrix-Library-for-Neural-Networks",
+      githublink: "https://github.com/Rocky111245/Cpp-Matrix-Library-for-Neural-Networks",
       desc: "I specifically crafted a Mathematics Matrices Library in modern C++ to enhance readability, speed, and robustness. This meticulously designed library is optimized for developing neural network frameworks, ensuring high performance and reliability. Key features include",
       img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/image-8-png-2133%C3%97893-.png?updatedAt=1724750496098",
     },
@@ -113,7 +113,7 @@ export default function Works({ selectedProject }) {
       id: "matrices_2",
       icon: "https://ik.imagekit.io/emtbd/rakib%20portfolio/symbol-data-matrix.svg?updatedAt=1724937177675",
       title: "Advanced Mathematics Matrices Library in Modern C++",
-      githublink: "https://github.com/Rocky111245/C-Matrix-Library-for-Neural-Networks",
+      githublink: "https://github.com/Rocky111245/Cpp-Matrix-Library-for-Neural-Networks",
       desc: "I specifically crafted a Mathematics Matrices Library in modern C++ to enhance readability, speed, and robustness. This meticulously designed library is optimized for developing neural network frameworks, ensuring high performance and reliability. Key features include",
       img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/Screenshot%202024-07-02%20201058.png?updatedAt=1719922289087",
     },
