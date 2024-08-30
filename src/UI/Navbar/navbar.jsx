@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import styles from './Navbar.module.css';
-import { FaGithub, FaLinkedin, FaWhatsapp, FaBars, FaTimes } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp, FaBars, FaTimes, FaEnvelope } from 'react-icons/fa';  // Import FaEnvelope
 
 function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -65,8 +65,9 @@ function Navbar() {
                         <a href="https://github.com/Rocky111245" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
                         <a href="https://www.linkedin.com/in/ahmed-rakib-al-hasan-9853a31a9" target="_blank" rel="noopener noreferrer"><FaLinkedin /></a>
                         <a href="https://wa.me/60164690349" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
+                        <a href="mailto:rakibalhasan170@gmail.com" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>  {/* Email Icon with Link */}
                     </div>
-                    <Link to="/contact" className={styles.contactButton} onClick={() => setIsMobileMenuOpen(false)}>Contact Me</Link>
+                    <a href="https://wa.me/60164690349" target="_blank" className={styles.contactButton} onClick={() => setIsMobileMenuOpen(false)}>Contact Me</a>
                 </div>
             </div>
         </header>

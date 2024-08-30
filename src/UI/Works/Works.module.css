@@ -140,6 +140,51 @@
   height: 100%;
   object-fit: contain;
 }
+
+/* Media query for screens below 1400px */
+@media (max-width: 1400px) {
+  .leftContainer h2 {
+    font-size: calc(2rem - (1400px - 100vw) * 0.0005);
+  }
+
+  .leftContainer p {
+    font-size: calc(1.2rem - (1400px - 100vw) * 0.0003);
+  }
+}
+
+/* Additional media queries for smaller screens if needed */
+@media (max-width: 1200px) {
+  .leftContainer h2 {
+    font-size: calc(1.8rem - (1200px - 100vw) * 0.0004);
+  }
+
+  .leftContainer p {
+    font-size: calc(1rem - (1200px - 100vw) * 0.0002);
+  }
+}
+
+@media (max-width: 1000px) {
+  .leftContainer h2 {
+    font-size: calc(1.6rem - (1000px - 100vw) * 0.0003);
+  }
+
+  .leftContainer p {
+    font-size: calc(0.9rem - (1000px - 100vw) * 0.00015);
+  }
+}
+
+@media (max-width: 800px) {
+  .leftContainer h2 {
+    font-size: 1.4rem;
+  }
+
+  .leftContainer p {
+    font-size: 0.8rem;
+  }
+}
+
+
+
 /* Responsive design media queries */
 @media (max-width: 768px) {
   .slider {

@@ -62,7 +62,7 @@ export const EmbeddedSystems = [
         id: "embedded_1",
         title: "Advanced Obstacle Avoiding Robot Developed using Arduino Microcontroller and Custom Algorithm",
         img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/DALLE2~2.WEB?updatedAt=1719738090065",
-        github_link: "https://github.com/Rocky111245/C-Matrix-Library-for-Neural-Networks",
+        github_link: "https://github.com/Rocky111245/Autonomous-Arduino-Obstacle-Avoiding-Robot",
         difficulty: 3
     },
     {
@@ -174,7 +174,7 @@ export const Capstone_Tier = [
         id: "capstone_7",
         title: "Advanced Obstacle Avoiding Robot Developed using Arduino Microcontroller and Custom Algorithm",
         img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/DALLE2~2.WEB?updatedAt=1719738090065",
-        github_link: "https://github.com/Rocky111245/Interactive-Medical-Chatbot",
+        github_link: "https://github.com/Rocky111245/Autonomous-Arduino-Obstacle-Avoiding-Robot",
         difficulty: 3
     }
 ];

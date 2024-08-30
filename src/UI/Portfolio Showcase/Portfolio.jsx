@@ -54,15 +54,7 @@ export default function Portfolio({ setSelectedProject }) {
         }
     }, [selected]);
 
-    const handleProjectClick = (projectId) => {
-        setSelectedProject(projectId);
-        setTimeout(() => {
-            const worksSection = document.getElementById('works');
-            if (worksSection) {
-                worksSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }, 100);
-    };
+
 
     return (
         <div className={styles.portfolio} id="portfolio">
@@ -91,9 +83,6 @@ export default function Portfolio({ setSelectedProject }) {
                                     <h6>Go to Project</h6>
                                     <img src="https://ik.imagekit.io/emtbd/BLOG/github-mark-white.png?updatedAt=1718272026499" alt="GitHub link" />
                                 </a>
-                                <button className={styles.viewDetailsButton} onClick={() => handleProjectClick(d.id)}>
-                            View Details
-                        </button>
                             </div>
                         </div>
                     </div>
