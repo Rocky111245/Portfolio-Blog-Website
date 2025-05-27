@@ -45,7 +45,7 @@ const AboutMe = () => {
             "Entrepreneurial mindset, evidenced by the creation of diverse and innovative projects.",
             "Exceptional debugging skills honed through extensive work on complex algorithms and systems.",
             "Interdisciplinary collaborator, capable of bridging gaps between technical and business domains.",
-            "Pursuing an MBA, indicating a commitment to combining technical expertise with business acumen.",
+            "Pursuing a research Master’s in Computer Science, with a focus on advanced neural networks and model interpretability.",
             "Passionate about sustainable technology solutions, aligning with growing industry trends.",
             "Demonstrated ability to work on performance-critical applications.",
             "Strong communication skills, as evidenced by participation in international events."
@@ -99,7 +99,8 @@ const AboutMe = () => {
       <section className={styles.continuousLearningSection}>
         <h2 className={styles.sectionTitle}>Continuous Learning and Future Vision</h2>
         <p className={styles.paragraph}>
-          I believe in the power of lifelong learning. Whether it's reverse engineering complex systems or tackling new programming languages, I thrive on challenges that expand my skillset. This mindset has led me to pursue an MBA, aiming to complement my technical expertise with business acumen.
+          I believe in the power of lifelong learning. Whether it's reverse engineering complex systems or tackling new programming languages, 
+          I thrive on challenges that expand my skillset. This mindset has led me to pursue a research-based Master’s in Computer Science, focusing on neural architecture efficiency, interpretability, and the theoretical foundations of deep learning.
         </p>
         <p className={styles.paragraph}>
           Looking ahead, I'm excited about the possibilities that lie at the intersection of technology, sustainability, and business. I'm committed to using my diverse skills and experiences to contribute to innovative solutions for tomorrow's challenges, particularly in renewable energy and software development.

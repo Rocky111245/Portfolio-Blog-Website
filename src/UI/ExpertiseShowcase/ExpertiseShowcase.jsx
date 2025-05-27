@@ -38,8 +38,8 @@ const ExpertiseShowcase = () => {
       description: "Explored embedded systems through hands-on projects, driven by a desire to understand hardware-software integration."
     },
     {
-      title: "Business Perspective",
-      description: "Pursuing an MBA to gain insights into how technical solutions can address real-world business challenges."
+      title: "Deep Learning Perspective",
+      description: "Pursuing a research Master’s in Computer Science, with a focus on advanced neural networks and model interpretability."
     },
     {
       title: "Self-Directed Learner",

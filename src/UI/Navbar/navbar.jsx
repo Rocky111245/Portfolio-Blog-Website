@@ -67,7 +67,7 @@ function Navbar() {
                         <a href="https://wa.me/60164690349" target="_blank" rel="noopener noreferrer"><FaWhatsapp /></a>
                         <a href="mailto:rakibalhasan170@gmail.com" target="_blank" rel="noopener noreferrer"><FaEnvelope /></a>  {/* Email Icon with Link */}
                     </div>
-                    <a href="https://wa.me/60164690349" target="_blank" className={styles.contactButton} onClick={() => setIsMobileMenuOpen(false)}>Contact Me</a>
+                    <a href="https://wa.me/60164690349" target="_blank" rel='nonreferrer' className={styles.contactButton} onClick={() => setIsMobileMenuOpen(false)}>Contact Me</a>
                 </div>
             </div>
         </header>

@@ -99,7 +99,7 @@ export default function Works({ selectedProject }) {
       icon: "https://ik.imagekit.io/emtbd/rakib%20portfolio/microchip-svgrepo-com.svg?updatedAt=1724937177654",
       title: "Microcontroller Circuit Design in EasyEDA ",
       desc: "In addition to my primary projects, I have hands-on experience with EasyEDA for circuit design and development. Developed and recreated projects using the ESP32 microcontroller, showcasing my ability to work with advanced microcontroller platforms and implement IoT solutions.",
-      img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/1.png?updatedAt=1719926152379"
+      img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/EasyEDA.png?updatedAt=1748307245294"
     },
     {
       id: "matrices_1",
@@ -116,15 +116,6 @@ export default function Works({ selectedProject }) {
       githublink: "https://github.com/Rocky111245/Cpp-Matrix-Library-for-Neural-Networks",
       desc: "I specifically crafted a Mathematics Matrices Library in modern C++ to enhance readability, speed, and robustness. This meticulously designed library is optimized for developing neural network frameworks, ensuring high performance and reliability.",
       img: "https://ik.imagekit.io/emtbd/rakib%20portfolio/Screenshot%202024-07-02%20201058.png?updatedAt=1719922289087",
-    },
-    {
-      id: "business_1",
-      icon: "https://ik.imagekit.io/emtbd/rakib%20portfolio/full_stack.png?updatedAt=1719760500969",
-      title: "Professional Business Website Development Using React",
-      desc: `I professionally developed a real business website for a client, utilizing modern React design patterns to ensure a high-quality, efficient, and visually appealing web presence.`,
-      iframeSrc: "https://player.vimeo.com/video/850517177?title=0&amp;byline=0&amp;portrait=0&amp;speed=0&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      isVideo: true,
-      githublink: "https://github.com/Rocky111245/Business-Website"
     },
     {
       id: "business_2",

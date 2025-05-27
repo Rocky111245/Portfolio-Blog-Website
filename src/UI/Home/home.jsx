@@ -36,7 +36,7 @@ const Home = () => {
                             With a strong foundation in algorithms and an understanding of underlying data structures, I thrive on challenges. My expertise spans C, C++, HTML, CSS, JavaScript, React, and Node.js, proven through successfully published projects.
                         </p>
                         <p>
-                            Currently, I am pursuing an MBA to blend technical skills with business knowledge, aiming to create sustainable and efficient solutions.
+                            Currently I am pursuing a Research Masters in Computer Science with focus on neural architecture efficiency, interpretability, and deep learning fundamentals.
                         </p>
                         <p>
                             I learn primarily through reverse engineering and eagerly embrace new challenges. I am a versatile individual, always striving to expand my skill set.
